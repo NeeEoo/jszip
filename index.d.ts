@@ -175,10 +175,10 @@ declare namespace JSZip {
         binary: boolean;
         dir: boolean;
         createFolders: boolean;
-        date: Date;
-        compression: Compression;
-        compressionOptions: null | CompressionOptions;
-        comment: string;
+        date: Date | null;
+        compression: Compression | null;
+        compressionOptions: CompressionOptions | null;
+        comment: string | null;
         unixPermissions: number | string | null;
         dosPermissions: number | null;
     }
